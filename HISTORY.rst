@@ -9,6 +9,7 @@ Release History
 **Improvements**
 
 - Markdown and R Markdown formats now support metadata (#66, #111, #188)
+- Pandoc's Markdown format is available as `md:pandoc` (#208)
 - The ``light`` format for Scripts can use custom cell markers, e.g. Vim or VScode/PyCharm folding markers (#199)
 
 **BugFixes**
@@ -16,6 +17,7 @@ Release History
 - Jupytext's contents manager is now based on ``LargeFileManager`` to allow large file uploads (#210)
 - YAML header parsed with yaml.safe_load rather than yaml.load
 - IPython line magic can be split across lines (#209)
+- Jupytext CLI can update the metadata on text files (#212)
 
 
 1.0.5 (2019-03-26)
