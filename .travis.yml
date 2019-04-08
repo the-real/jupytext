@@ -1,7 +1,7 @@
 language: python
 python:
   - "3.6"
-  - "conda"
+  - "3.6.8"
   - "pypy"
   - "2.7"
   - "3.4"
@@ -13,7 +13,7 @@ matrix:
       sudo: required  # required for Python 3.7 (travis-ci/travis-ci#9069)
 
 install:
-  - if [[ "$TRAVIS_PYTHON_VERSION" == "conda" ]]
+  - if [[ "$TRAVIS_PYTHON_VERSION" == "3.6.8" ]]
     then
       # We use conda in order to install pandoc
       # https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/use-conda-with-travis-ci.html
