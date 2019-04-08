@@ -49,7 +49,7 @@ before_script:
   # exit-zero treats all errors as warnings.  The GitHub editor is 127 chars wide
   - flake8 . --count --exit-zero --max-complexity=10 --statistics
 script:
-  - PATH=pandoc-2.7.2/bin:$PATH coverage run --source=. -m py.test
+  - coverage run --source=. -m py.test
 after_success:
   - coverage report -m
   - codecov
