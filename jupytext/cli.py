@@ -86,7 +86,7 @@ def parse_jupytext_args(args=None):
 
     # Action: convert(default)/version/list paired paths/sync/apply/test
     action = parser.add_mutually_exclusive_group()
-    action.add_argument('--version',
+    action.add_argument('-v', '--version',
                         action='store_true',
                         help="Show jupytext's version number and exit")
     action.add_argument('--paired-paths', '-p',
